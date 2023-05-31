@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity(){
     }
 
     private fun getData() {
-        RetrofitInstance.apiInterfae.getData().enqueue()
+        RetrofitInstance.apiInterfae.getData().enqueue(t)
     }
 }
