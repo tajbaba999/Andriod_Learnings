@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity(){
-    var api : String = "https://jsonplaceholder.typicode.com/photos"
+    var api : String = "https://meme-api.com/gimme"
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
