@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTVQuestionsAttempted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Number of questions"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/idTvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVQuestionsAttempted"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="27sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTvQuestion"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/option1"
+            android:backgroundTint=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option 1"
+            android:padding="3dp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundshpae"
+            android:layout_margin="15dp"/>
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option 2"
+            android:padding="3dp"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundshpae"
+            />
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option 3"
+            android:padding="3dp"
+            android:textAllCaps="false"
+            android:layout_margin="15dp"
+            android:background="@drawable/roundshpae"
+            />
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option 4"
+            android:padding="3dp"
+            android:textAllCaps="false"
+            android:layout_margin="15dp"
+            android:background="@drawable/roundshpae"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
