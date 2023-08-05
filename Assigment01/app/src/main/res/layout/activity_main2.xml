@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-495dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <Button
+            android:id="@+id/block"
+            android:layout_width="149dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="248dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Blockcahin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.862"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/aiml"
+            android:layout_width="151dp"
+            android:layout_height="114dp"
+            android:layout_marginEnd="224dp"
+            android:background="@drawable/rounded_corner"
+            android:text=" Aritificial Intelligence and Machine learing"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="256dp" />
+
+
+        <Button
+            android:id="@+id/data"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="508dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Data Scinece"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.665"
+            tools:ignore="UnknownId" />
+
+        <Button
+            android:id="@+id/web"
+            android:layout_width="145dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Web Development"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="226dp" />
+
+        <Button
+            android:id="@+id/andriod"
+            android:layout_width="338dp"
+            android:layout_height="136dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Andiod Learing"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="342dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Call Me"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.849" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
