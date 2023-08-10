@@ -2,7 +2,6 @@ package com.example.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -11,18 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var vrkhoil = Person("Virat Kohil","34",R.drawable.oneimage)
-        var anushka = Person("Anushka","33",R.drawable.twoimage)
-        var vamika = Person("Vamika","2",R.drawable.threeimage)
-
-        val l : ArrayList<Person>? = ArrayList()
-        l!!.add(vrkhoil)
-        l.add(anushka)
-        l.add(vamika)
-
-        var rv = findViewById<RecyclerView>(R.id.recyclerview)
-        rv.layoutManager = LinearLayoutManager(this)
+        var vkohil = Person("Kohil", "cricketer",R.drawable.fourimage)
+        var rohit = Person("Kohil", "cricketer",R.drawable.oneimage)
+        var  msd = Person("Kohil", "cricketer",R.drawable.threeimage)
+        var l : ArrayList<Person> = ArrayList()
+        l!!.add(vkohil)
+        l.add(rohit)
+        l.add(msd)
+        var rv = findViewById<RecyclerView>(R.id.rv)
         rv.adapter = MyAdapter(l)
-
+        rv.layoutManager = LinearLayoutManager(this)
     }
 }
