@@ -5,6 +5,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
@@ -17,6 +21,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
@@ -44,9 +49,9 @@ class MainActivity : ComponentActivity() {
 //}
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview(showBackground = true, name = "HelloCheez", showSystemUi = true)
-@Composable
-fun previewFunction() {
+//@Preview(showBackground = true, name = "HelloCheez", showSystemUi = true)
+//@Composable
+//fun previewFunction() {
 //    Text(
 //        text = "Hello CheezyCode",
 //        fontStyle = FontStyle.Italic,
@@ -74,8 +79,8 @@ fun previewFunction() {
 //        Image(painter = painterResource(id = R.drawable.kylie), contentDescription = "Dummy Btn")
 //    }
 
-  /
-}
+
+//}
 
 //@SuppressLint("UnrememberedMutableState")
 //@OptIn(ExperimentalMaterial3Api::class)
@@ -91,5 +96,36 @@ fun previewFunction() {
 //        label = { Text(text = "Enter message ")}
 //    )
 //}
+
+
+@Preview(showBackground = true, widthDp = 300, heightDp = 600)
+@Composable
+private fun PreviewFuncion(){
+    Column (
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Text(text = "A", fontSize = 24.sp)
+        Text(text = "B", fontSize = 24.sp)
+    }
+
+
+    Row (
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ){
+        Text(text = "A", fontSize = 24.sp)
+        Text(text = "B", fontSize = 24.sp)
+    }
+
+    Box (
+        contentAlignment = Alignment.Center
+    ){
+        Text(text = "A", fontSize = 24.sp)
+        Text(text = "B", fontSize = 24.sp)
+    }
+
+
+}
 
 
